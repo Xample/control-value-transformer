@@ -77,7 +77,7 @@ export class ControlValueTransformerDirective<S, T> implements OnChanges {
   };
 
   /**
-   * Transforms the provided source value to the target value type and than call the original `writeValue` implementation.
+   * Transforms the provided source value to the target value type and then call the original `writeValue` implementation.
    */
   writeValue = (sourceValue: S) => {
     if (this.controlValueTransformer) {
